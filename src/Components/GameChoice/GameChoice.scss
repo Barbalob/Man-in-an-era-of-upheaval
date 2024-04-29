@@ -1,0 +1,153 @@
+.choice{
+    max-width: 1255px;
+    padding: 0 20px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    &-btn{
+        margin-top: 220%;
+        background-color: inherit;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        z-index: 2;
+        &:disabled{
+            opacity: 0.2;
+        }
+        &-text{        
+            font-family: "Marmelad", sans-serif;
+            font-size: 40px;
+            font-weight: 400;
+            text-align: left;
+            color:#000000 ;
+        }
+        &-img{
+        }
+    }
+    &-upper{
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            position: relative;
+            width: 50%;
+            height: 380px;
+            &-img{
+                margin-top: 25px;
+                display: inline-block;
+                width: 605px;
+            }
+            &-text{
+                margin-top: 25px;
+                display: inline-block;
+                width: 605px;
+                font-family: "Marmelad", sans-serif;
+                font-size: 30px;
+                font-weight: 400;
+                text-align: left;
+                color:#000000 ;
+            }
+        }
+        .decor{
+            &::after{
+                content: url('../../assets/decor/redEdging.png');
+                position: absolute;
+                z-index: 100;
+                top: 15px;
+                left: -10px;
+                width: 42px;
+                height: 42px;    
+            }
+            &::before{
+                content: url('../../assets/decor/redEdging.png');
+                transform: rotate(180deg);
+                position: absolute;
+                z-index: 100;
+                bottom:-3px;
+                right: -7px;
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+    &-section{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &-call{ 
+            margin-top: 30%;
+            width: 280px;
+            font-family: "Marmelad", sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            text-align: left;
+            color:#000000 ;
+        }
+        &-arrow{
+            width: 300px;
+            margin-top: 40%;
+            rotate: -15;
+        }
+        &-answers{
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &-btn{
+                height: 130px;
+                width: 100%;
+                background: none;
+                background-image: url('../../assets/answer.png');
+            }
+            .active{
+                button{
+                    position: relative;
+                    &::before{
+                        background-image: url('../../assets/decor/redCircle.png') ;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        position: absolute;
+                        z-index: 100;
+                        height: 100%;
+                        width: 100%;
+                        right: 0;
+                        bottom: -10%;
+                        left: 3%;
+                        display: block;
+                        content:"";
+                    }
+                }
+            }
+            &-text{
+                margin: auto;
+                width: 310px;
+                position: relative;
+                font-family: "Marmelad", sans-serif;
+                font-size: 30px; 
+                font-weight: 400;
+                color:#000000;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+.choice-img::after{
+    content: url('../../assets/decor/redEdging.png');
+    position: absolute;
+    z-index: 100;
+    top: -10px;
+    left: -10px;
+    width: 42px;
+    height: 42px;    
+}
+.choice-img::before{
+    content: url('../../assets/decor/redEdging.png');
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 100;
+    bottom:-10px;
+    right: -10px;
+    width: 42px;
+    height: 42px;
+}
