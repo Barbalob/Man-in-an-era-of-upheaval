@@ -1,11 +1,12 @@
 import Header from '../Components/Header/Header';
 import Characters from '../Components/Characters/Characters';
+import { FC } from 'react';
 
-const CharacterSelection = () => {
+const CharacterSelection:FC<{setData:any}> = ({setData}) => {
     return (
         <>
             <Header />
-            <Characters />
+            <Characters setData={setData} />
         </>
     );
 };

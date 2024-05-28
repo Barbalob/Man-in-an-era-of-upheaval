@@ -1,35 +1,42 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import './Characters.scss'
 import srcPeapeasantImg from '../../assets/characters/peasantImg.png'
 import srcNoblemanImg from '../../assets/characters/noblemanImg.png'
 import srcTestImg from '../../assets/characters/testImg.png'
 import srcArrowMain from '../../assets/arrowMain.png'
+import { useNavigate } from 'react-router-dom';
+import { dataPeapeasant } from '../../data/Peapeasant/dataPeapeasant';
 
-const Characters = () => {
+const Characters:FC<{setData:any}> = ({setData}) => {
     const [active, setActive] = useState(false)
+    const nav = useNavigate()
     const [characters, setCharacters] = useState([
         {
             name:'Дворянин',
             href:'',
             srcImg:srcPeapeasantImg,
+            data: dataPeapeasant,
             active: false
         },
         {
             name:'Купец',
             href:'',
             srcImg:srcNoblemanImg,
+            data: dataPeapeasant,
             active: false
         },
         {
             name:'Крестьянин',
             href:'',
             srcImg:srcTestImg,
+            data: dataPeapeasant,
             active: false
         },
         {
             name:'Рабочий',
             href:'',
             srcImg:srcTestImg,
+            data: dataPeapeasant,
             active: false
         }, 
     ])
@@ -40,6 +47,13 @@ const Characters = () => {
         t[index].active = true
         setCharacters(t)
     }
+
+    const choiceHandle = ( ) => {
+        const activeData = characters.filter(el => el.active === true)
+        setData(activeData[0].data)
+        nav('/Man-in-an-era-of-upheaval/game')
+    }
+
     return (
         <div className='characters'>
             <h2 className='characters-title'>Выбор ветки </h2>
@@ -55,7 +69,7 @@ const Characters = () => {
                     )
                 })}
             </ul>
-            <button disabled={!active} className='characters-btn'>
+            <button disabled={!active} onClick={choiceHandle} className='characters-btn'>
                     <p className='characters-btn-text'>Далее</p>
                     <img className='characters-btn-img' src={srcArrowMain} alt="" />
             </button>
