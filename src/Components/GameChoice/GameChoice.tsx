@@ -1,63 +1,56 @@
-import { useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import './GameChoice.scss'
-import srcPeapeasantImg from '../../assets/characters/peasantImg.png'
-import srcNoblemanImg from '../../assets/characters/noblemanImg.png'
-import srcTestImg from '../../assets/characters/testImg.png'
 import srcArrowMain from '../../assets/arrowMain.png'
 import srcArrowChoice from '../../assets/arrow2.svg'
-import srcChoiceImg from '../../assets/img/1.png'
 
-const GameChoice = () => {
+const GameChoice:FC<{dataQuestion:any, setOptionsQuestion:any, optionsQuestion:any}> = ({dataQuestion, setOptionsQuestion, optionsQuestion}) => {
     const [active, setActive] = useState(false)
-    const [answers, setAnswers] = useState([
+    const [answers, setAnswers] = useState(dataQuestion.choice.map((el:any) => {return {...el, active: false}}))
+
+    useEffect(()=>
         {
-            id:'1',
-            text:'Оплатить поездку на ирбитскую ярмарку',
-            href:'',
-            active: false
+            setAnswers(dataQuestion.choice.map((el:any) => {return {...el, active: false}}))
+            setActive(false)
         },
-        {
-            id:'2',
-            text:'Оплатить свадьбу сына',
-            href:'',
-            active: false
-        },
-        {
-            id:'3',
-            text:'Сыграть в карты в кабаке',
-            href:'',
-            active: false
-        },
-    ])
+        [dataQuestion]
+    )
 
     const ClickHandler = (index:number) => {
         setActive(true)
-        let t = answers.map(el =>  {return {...el, active:false}})
+        let t = answers.map((el:any) =>  {return {...el, active:false}})
         t[index].active = true
         setAnswers(t)
     }
+
+    const NextQuestionHandler = () => {
+        const activeAnswer = answers.filter((el:any) => el.active === true)
+        const oldId = optionsQuestion.id
+        const isEnd = activeAnswer[0].isEnd
+        setOptionsQuestion({...optionsQuestion, id: oldId + 1, isEnd})
+    }
+
     return (
         <div className='choice'>
             <ul className='choice-upper'>
-                <li className='choice-upper-item'><p className='choice-upper-item-text'>На дворе 1895 год. Вы – обычный крестьянин-середняк, которому совсем недавно исполнилось тридцать лет. За Вашей спиной стоит большая семья, состоящая из девяти человек, что, конечно, является несомненным преимуществом: все детки при деле и приносят копеечку. Подрабатывая то здесь, то там и продавая излишки, Ваш «семейный кооператив» смог накопить внушительную сумму.</p></li>
-                <li className='choice-upper-item decor'><img className='choice-upper-item-img' src={srcChoiceImg} alt="" /></li>
+                <li className='choice-upper-item'><p className='choice-upper-item-text'>{dataQuestion.description}</p></li>
+                <li className='choice-upper-item decor'><img className='choice-upper-item-img' src={dataQuestion.srcImg} alt="" /></li>
             </ul>
 
             <ul className ='choice-section'>
-                <li><p className='choice-section-call'>Перед Вами встает непраздный вопрос как ее потратить:</p></li>
+                <li><p className='choice-section-call'>{dataQuestion.textQuestion}</p></li>
                 <li><img className='choice-section-arrow' src={srcArrowChoice} alt="" /></li>
                 <li><ul className='choice-section-answers'>
-                {answers.map((answer, index) => {
+                {answers.map((answer:any, index:number) => {
                     return (
-                        <li key={answer.id} className={`${answer.active?"active":""}`}>
+                        <li key={index} className={`${answer.active?"active":""}`}>
                             <button onClick={()=>ClickHandler(index)} className='choice-section-answers-btn'>
-                                <p className='choice-section-answers-text'>{answer.text}</p>
+                                <p className='choice-section-answers-text'>{answer.textAnswer}</p>
                             </button>
                         </li>
                     )
                 })}
                 </ul></li>
-                <li><button disabled={!active} className='choice-btn'>
+                <li><button onClick={NextQuestionHandler} disabled={!active} className='choice-btn'>
                     <p className='choice-btn-text'>Далее</p>
                     <img className='choice-btn-img' src={srcArrowMain} alt="" />
                 </button></li>
