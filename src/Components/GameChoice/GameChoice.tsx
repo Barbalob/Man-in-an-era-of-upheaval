@@ -34,7 +34,7 @@ const GameChoice:FC<{dataQuestion:any, setOptionsQuestion:any, optionsQuestion:a
         <div className='choice'>
             <ul className='choice-upper'>
                 <li className='choice-upper-item'><p className='choice-upper-item-text'>{dataQuestion.description}</p></li>
-                <li className='choice-upper-item decor'><img className='choice-upper-item-img' src={dataQuestion.srcImg} alt="" /></li>
+                <li className='choice-upper-item choice-upper-item-container decor'><img className='choice-upper-item-img' src={dataQuestion.srcImg} alt="" /></li>
             </ul>
 
             <ul className ='choice-section'>

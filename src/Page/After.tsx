@@ -9,7 +9,7 @@ const After:FC<{optionsQuestion:any, setOptionsQuestion:any, dataQuestion:any}> 
         <div className='choice'>
             <ul className='choice-upper'>
                 <li className='choice-upper-item'><p className='choice-upper-item-text'>{optionsQuestion.textAfter}</p></li>
-                <li className='choice-upper-item decor'><img className='choice-upper-item-img' src={dataQuestion.srcImg} alt="" /></li>
+                <li className='choice-upper-item choice-upper-item-container decor'><img className='choice-upper-item-img' src={dataQuestion.srcImg} alt="" /></li>
             </ul>
             <button onClick={NextQuestionHandler}  className='characters-btn'>
                 <p className='characters-btn-text'>Далее</p>

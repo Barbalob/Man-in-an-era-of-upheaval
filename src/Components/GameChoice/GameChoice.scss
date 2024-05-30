@@ -30,12 +30,17 @@
         justify-content: space-between;
         &-item{
             position: relative;
-            width: 50%;
+            max-width: 50%;
             height: 380px;
+            &-container{
+                align-self: center;
+                margin: auto;
+            }
             &-img{
                 margin-top: 25px;
                 display: inline-block;
-                width: 605px;
+                max-width: 605px;
+                max-height: 350px;
             }
             &-text{
                 margin-top: 25px;
