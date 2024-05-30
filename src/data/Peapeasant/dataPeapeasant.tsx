@@ -39,16 +39,17 @@ export const dataPeapeasant = [
       },
       {
         textAnswer:'Test2',
-        textAfter:'Test1.2',
-        isEnd: false,
+        textAfter:'Test1.2Test1.2Test1.2Test1.2Test1.2Test1.2Test1.2',
+        isEnd: true,
         idNextQuestion: '1.1'
       },
       {
         textAnswer:'Test3',
         textAfter:'Test1.2',
-        isEnd: true,
+        isEnd: false,
         idNextQuestion: '1.1'
       },
     ]
-  }
+  }, 
+
 ]

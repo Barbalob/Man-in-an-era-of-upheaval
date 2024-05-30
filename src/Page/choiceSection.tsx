@@ -20,20 +20,20 @@ const ChoiceSection:FC<{data:any}> = ({data}) => {
     }, [])
 
     useEffect(()=>{
-        
-        if (optionsQuestion.isEnd && !optionsQuestion.textAfter) {
-            console.log(optionsQuestion.textAfter);
-            nav('/end')
-        } 
-        if (optionsQuestion.id >= data?.length ){
-            console.log(optionsQuestion.id);
-            console.log(data?.length );
-            console.log(2);
-            nav('/end')
-        }
+        setDataQuestion(data ? data[optionsQuestion.id] : [])
     }, [optionsQuestion])
-    console.log(optionsQuestion.textAfter);
 
+    if (optionsQuestion.isEnd && !optionsQuestion.textAfter) {
+        console.log(optionsQuestion.textAfter);
+        nav('/end')
+    } 
+    if (optionsQuestion.id >= data?.length ){
+        console.log(optionsQuestion.id);
+        console.log(data?.length );
+        console.log(2);
+        nav('/end')
+    }
+    
     return (
         <>
             <Header />
