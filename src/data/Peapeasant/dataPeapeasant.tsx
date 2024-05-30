@@ -164,5 +164,6 @@ export const dataPeapeasant = [
         idNextQuestion: '1.8'
       },
     ]
-  }
+  }, 
+
 ]
