@@ -26,7 +26,8 @@ const GameChoice:FC<{dataQuestion:any, setOptionsQuestion:any, optionsQuestion:a
         const activeAnswer = answers.filter((el:any) => el.active === true)
         const oldId = optionsQuestion.id
         const isEnd = activeAnswer[0].isEnd
-        setOptionsQuestion({...optionsQuestion, id: oldId + 1, isEnd})
+        const textAfter = activeAnswer[0].textAfter
+        setOptionsQuestion({...optionsQuestion, isEnd, textAfter})
     }
 
     return (

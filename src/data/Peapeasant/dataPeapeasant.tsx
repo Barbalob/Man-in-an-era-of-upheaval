@@ -8,16 +8,19 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Оплатить поездку на ирбитскую ярмарку',
+        textAfter:'Test1',
         isEnd: false,
         idNextQuestion: '1.1'
       },
       {
         textAnswer:'Оплатить свадьбу сына',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.1'
       },
       {
         textAnswer:'Сыграть в карты в кабаке',
+        textAfter:'Test3',
         isEnd: false,
         idNextQuestion: '1.1'
       },
@@ -30,16 +33,678 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Test1',
+        textAfter:'Test1.1',
         isEnd: false,
         idNextQuestion: '1.1'
       },
       {
         textAnswer:'Test2',
+        textAfter:'Test1.2',
         isEnd: false,
         idNextQuestion: '1.1'
       },
       {
         textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },
+  {
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
+        isEnd: true,
+        idNextQuestion: '1.1'
+      },
+    ]
+  },{
+    description: 'Test',
+    srcImg: srcImg1,
+    textQuestion: 'Перед Вами встает непраздный вопрос как ее потратить:',
+    choice: [
+      {
+        textAnswer:'Test1',
+        textAfter:'Test1.1',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test2',
+        textAfter:'Test1.2',
+        isEnd: false,
+        idNextQuestion: '1.1'
+      },
+      {
+        textAnswer:'Test3',
+        textAfter:'Test1.2',
         isEnd: true,
         idNextQuestion: '1.1'
       },
