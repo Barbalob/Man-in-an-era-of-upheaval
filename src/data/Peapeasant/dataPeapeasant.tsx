@@ -20,6 +20,7 @@ export const dataPeapeasant = [
       },
       {
         textAnswer:'Сыграть в карты в кабаке',
+        textAfter:'Test2',
         isEnd: true,
         idNextQuestion: '1.1'
       },
@@ -32,11 +33,13 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Брошусь в середину вражеской стенки',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.2'
       },
       {
         textAnswer:'Необходимо выбить менее сильныех противников',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.2'
       },
@@ -49,11 +52,13 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Надо бы отправить старших детишек в город',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.3'
       },
       {
         textAnswer:'Просить денег в долг',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.3'
       },
@@ -66,11 +71,13 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Надо бы начать развивать собственное хозяйство',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.4'
       },
       {
         textAnswer:'Пожалуй, останусь-ка я в общине',
+        textAfter:'Test2',
         isEnd: true,
         idNextQuestion: '1.4'
       },
@@ -83,11 +90,13 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Вы решаете развить свое хозяйство в этом русле',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.5'
       },
       {
         textAnswer:'Пора выбираться из села и становиться промышленником!',
+        textAfter:'Test2',
         isEnd: true,
         idNextQuestion: '1.5'
       },
@@ -100,11 +109,13 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Конечно, надо дать детям все лучшее',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.6'
       },
       {
         textAnswer:'Меньше знаешь – лучше спишь!',
+        textAfter:'Test2',
         isEnd: true,
         idNextQuestion: '1.6'
       },
@@ -117,16 +128,19 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Пожертвовать на реконструкцию сельской церкви.',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.7'
       },
       {
         textAnswer:'Помоч погорельцам из соседнего двора',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.7'
       },
       {
         textAnswer:'Поговорим об этом, когда накоплю еще денег!',
+        textAfter:'Test2',
         isEnd: true,
         idNextQuestion: '1.7'
       },
@@ -139,11 +153,13 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Удержать часть продуктов и нажиться, повысив цену!',
+        textAfter:'Test2',
         isEnd: true,
         idNextQuestion: '1.8'
       },
       {
         textAnswer:'Необходимо пустить свои силы на помощь фронту!',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.8'
       },
