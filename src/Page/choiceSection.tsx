@@ -31,6 +31,7 @@ const ChoiceSection:FC<{data:any}> = ({data}) => {
             console.log(2);
             nav('/Man-in-an-era-of-upheaval/end')
         }
+        setDataQuestion(data ? data[optionsQuestion.id] : [])
     }, [optionsQuestion])
     console.log(optionsQuestion.textAfter);
 
