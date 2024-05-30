@@ -43,6 +43,7 @@ const ChoiceSection:FC<{data:any}> = ({data}) => {
                 <After 
                     optionsQuestion={optionsQuestion}
                     setOptionsQuestion={setOptionsQuestion}
+                    dataQuestion={dataQuestion} 
                 />
                 :
                 <GameChoise 
