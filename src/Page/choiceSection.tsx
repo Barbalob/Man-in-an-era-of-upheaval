@@ -2,15 +2,16 @@ import Header from '../Components/Header/Header';
 import GameChoise from '../Components/GameChoice/GameChoice';
 import { FC, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import After from './After';
 
 const ChoiceSection:FC<{data:any}> = ({data}) => {
     const nav = useNavigate()
     const [optionsQuestion, setOptionsQuestion] = useState({
         id:0,
-        isEnd: false
+        isEnd: false, 
+        textAfter:'',
     })
     const [dataQuestion, setDataQuestion] = useState(data ? data[optionsQuestion.id] : [])
-
     
     useEffect(()=>{
         if (!data) {
@@ -19,21 +20,38 @@ const ChoiceSection:FC<{data:any}> = ({data}) => {
     }, [])
 
     useEffect(()=>{
-        if (optionsQuestion.isEnd) {
+        
+        if (optionsQuestion.isEnd && !optionsQuestion.textAfter) {
+            console.log(optionsQuestion.textAfter);
             nav('/end')
-        } else {}
+        } 
         if (optionsQuestion.id >= data?.length ){
+            console.log(optionsQuestion.id);
+            console.log(data?.length );
+            console.log(2);
             nav('/end')
         }
-        
-        setDataQuestion(data ? data[optionsQuestion.id] : [])
-
-    },[optionsQuestion])
+    }, [optionsQuestion])
+    console.log(optionsQuestion.textAfter);
 
     return (
         <>
             <Header />
-            {data ? <GameChoise dataQuestion={dataQuestion} optionsQuestion={optionsQuestion} setOptionsQuestion={setOptionsQuestion}/>:""}
+            {data ? 
+            (
+                optionsQuestion.textAfter ? 
+                <After 
+                    optionsQuestion={optionsQuestion}
+                    setOptionsQuestion={setOptionsQuestion}
+                />
+                :
+                <GameChoise 
+                    dataQuestion={dataQuestion} 
+                    optionsQuestion={optionsQuestion} 
+                    setOptionsQuestion={setOptionsQuestion}
+                />
+            ) 
+            :""}
             
         </>
     );

@@ -8,11 +8,13 @@ export const dataPeapeasant = [
     choice: [
       {
         textAnswer:'Оплатить поездку на ирбитскую ярмарку',
+        textAfter:'Test1',
         isEnd: false,
         idNextQuestion: '1.1'
       },
       {
         textAnswer:'Оплатить свадьбу сына',
+        textAfter:'Test2',
         isEnd: false,
         idNextQuestion: '1.1'
       },
@@ -146,5 +148,5 @@ export const dataPeapeasant = [
         idNextQuestion: '1.8'
       },
     ]
-  },
+  }
 ]
