@@ -1,11 +1,12 @@
 import Header from '../Components/Header/Header';
 import EndGame from '../Components/EndGame/EndGame';
+import { FC } from 'react';
 
-const ResultSection = () => {
+const ResultSection:FC<{end:any}> = ({end}) => {
     return (
         <>
             <Header />
-            <EndGame/>
+            <EndGame end={end}/>
         </>
     );
 };

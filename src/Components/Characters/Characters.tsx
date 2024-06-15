@@ -7,7 +7,7 @@ import srcArrowMain from '../../assets/arrowMain.png'
 import { useNavigate } from 'react-router-dom';
 import { dataPeapeasant } from '../../data/Peapeasant/dataPeapeasant';
 
-const Characters:FC<{setData:any}> = ({setData}) => {
+const Characters:FC<{setData:any, setEnd:any}> = ({setData, setEnd}) => {
     const [active, setActive] = useState(false)
     const nav = useNavigate()
     const [characters, setCharacters] = useState([
@@ -16,28 +16,32 @@ const Characters:FC<{setData:any}> = ({setData}) => {
             href:'',
             srcImg:srcPeapeasantImg,
             data: dataPeapeasant[0],
-            active: false
+            active: false,
+            end:["test1", "test2"],
         },
         {
             name:'Купец',
             href:'',
             srcImg:srcNoblemanImg,
             data: dataPeapeasant[1],
-            active: false
+            active: false,
+            end:["test1", "test2"],
         },
         {
             name:'Крестьянин',
             href:'',
             srcImg:srcTestImg,
             data: dataPeapeasant[2],
-            active: false
+            active: false,
+            end:["test1", "test2"],
         },
         {
             name:'Рабочий',
             href:'',
             srcImg:srcTestImg,
             data: dataPeapeasant[3],
-            active: false
+            active: false,
+            end:["test1", "test2"],
         }, 
     ])
 
@@ -51,6 +55,7 @@ const Characters:FC<{setData:any}> = ({setData}) => {
     const choiceHandle = ( ) => {
         const activeData = characters.filter(el => el.active === true)
         setData(activeData[0].data)
+        setEnd(activeData[0].end)
         nav('/Man-in-an-era-of-upheaval/game')
     }
 

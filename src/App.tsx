@@ -10,14 +10,15 @@ import { useState } from 'react'
 
 function App() {
   const [data, setData] = useState<any>([])
+  const [end, setEnd] = useState<any>([])
 
   return (
     <div className="wrapper">
       <Routes>
           <Route path="/Man-in-an-era-of-upheaval" element={<Main />} />
-          <Route path="/Man-in-an-era-of-upheaval/character-selection" element={<CharacterSelection setData={setData} />} />
+          <Route path="/Man-in-an-era-of-upheaval/character-selection" element={<CharacterSelection setData={setData} setEnd={setEnd} />} />
           <Route path="/Man-in-an-era-of-upheaval/game" element={<ChoiceSection data={data}/>} />
-          <Route path="/Man-in-an-era-of-upheaval/end" element={<ResultSection/>} />
+          <Route path="/Man-in-an-era-of-upheaval/end" element={<ResultSection end={end}/>} />
       </Routes>
     </div>
   )
