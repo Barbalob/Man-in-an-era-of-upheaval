@@ -1,4 +1,3 @@
-import srcImg1 from '../../assets/img/1.png'
 import srcImg11 from '../../assets/img/1.1.jpg'
 import srcImg12 from '../../assets/img/1.2.jpg'
 import srcImg13 from '../../assets/img/1.3.jpg'

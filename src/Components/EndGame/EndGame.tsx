@@ -1,9 +1,8 @@
-import { FC, useEffect, useState } from 'react';
 import './EndGame.scss'
-import { NavLink, Navigate, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import srcArrowMain from '../../assets/arrowMain.png'
 
-const EndGame:FC<{dataQuestion:any, setOptionsQuestion:any, optionsQuestion:any}> = ({dataQuestion, setOptionsQuestion, optionsQuestion}) => {
+const EndGame = ({}) => {
     // const results = [
     //     {
     //         id:'1',
@@ -25,7 +24,7 @@ const EndGame:FC<{dataQuestion:any, setOptionsQuestion:any, optionsQuestion:any}
                     </div>
                     </li>
             </ul>
-            <button onClick={e => nav('/Man-in-an-era-of-upheaval') } disabled='' className='result-btn'>
+            <button onClick={() => nav('/Man-in-an-era-of-upheaval') } className='result-btn'>
                     <p className='result-btn-text'>В начало</p>
                     <img className='result-btn-img' src={srcArrowMain} alt="" />
             </button>  

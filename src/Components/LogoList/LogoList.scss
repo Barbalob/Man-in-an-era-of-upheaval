@@ -1,0 +1,43 @@
+.list-logo{
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+    align-items: center;
+    margin-top: 26px;
+    &-item{
+        &-image{
+            
+
+        }
+        }
+    .image-center{
+        margin-left: 230px;
+    }
+    .image-rigth{
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 767px){
+    .list-logo{
+        padding: 0 10px;
+        display: flex;
+        margin: 0 auto;
+        max-width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        &-item{
+            &-image{
+                max-width: 120px;
+                max-height: 80px;
+            }
+        }
+        .image-center{
+            margin-left: 0px;
+        }
+        .image-rigth{
+            margin: 0;
+        }
+    }
+}

@@ -1,12 +1,11 @@
 import Header from '../Components/Header/Header';
 import EndGame from '../Components/EndGame/EndGame';
-import { FC} from 'react';
 
-const ResultSection:FC<{setData:any}> = ({setData}) => {
+const ResultSection = () => {
     return (
         <>
             <Header />
-            <EndGame setData={setData} />
+            <EndGame/>
         </>
     );
 };

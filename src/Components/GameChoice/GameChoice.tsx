@@ -6,7 +6,7 @@ import srcArrowChoice from '../../assets/arrow2.svg'
 const GameChoice:FC<{dataQuestion:any, setOptionsQuestion:any, optionsQuestion:any}> = ({dataQuestion, setOptionsQuestion, optionsQuestion}) => {
     const [active, setActive] = useState(false)
     const [answers, setAnswers] = useState(dataQuestion.choice.map((el:any) => {return {...el, active: false}}))
-
+    console.log(1);
     useEffect(()=>
         {
             setAnswers(dataQuestion.choice.map((el:any) => {return {...el, active: false}}))
@@ -24,7 +24,6 @@ const GameChoice:FC<{dataQuestion:any, setOptionsQuestion:any, optionsQuestion:a
 
     const NextQuestionHandler = () => {
         const activeAnswer = answers.filter((el:any) => el.active === true)
-        const oldId = optionsQuestion.id
         const isEnd = activeAnswer[0].isEnd
         const textAfter = activeAnswer[0].textAfter
         setOptionsQuestion({...optionsQuestion, isEnd, textAfter, })

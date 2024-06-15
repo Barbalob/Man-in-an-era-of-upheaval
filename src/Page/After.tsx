@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import srcArrowMain from '../assets/arrowMain.png'
 
 const After:FC<{optionsQuestion:any, setOptionsQuestion:any, dataQuestion:any}> = ({optionsQuestion, setOptionsQuestion, dataQuestion}) => {
