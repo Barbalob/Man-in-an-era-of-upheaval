@@ -54,14 +54,14 @@
                 text-align: left;
                 color:#000000;
                 &::-webkit-scrollbar {
-                    width: 3px;
+                    width: 8px;
                     border-radius:10px;
                 }
                 &::-webkit-scrollbar-track {
                         background: inherit;
                 }
                 &::-webkit-scrollbar-thumb {
-                        background-color: rgb(154, 126, 95);
+                        background-color: #FF5925;
                         border-radius: 5px;
                 }
             }
