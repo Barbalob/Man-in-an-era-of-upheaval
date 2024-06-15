@@ -11,9 +11,9 @@ const EndGame:FC<{end:any}> = ({end}) => {
         <div className='result'>
             <h2 className='characters-title'>Поздравляем, вы завершили квест!</h2>
             <ul className='result-upper'>
-                <li className='result-upper-item'><p className='result-upper-item-text'>{end[0]}</p></li>
+                <li className='result-upper-item'><p className='result-upper-item-text'>{end}</p></li>
                 <li className='result-upper-item'>
-                    <p className='result-upper-item-text'>{end[1]}</p>
+                    <p className='result-upper-item-text'>Их положению, деятельности и месте в российской истории посвящено немало трудов и научных исследований. С некоторыми из них команда проекта предлагает Вам познакомиться прямо сейчас:</p>
                     <div className='bibliogr'>
                         <NavLink className="bibliogr-item" to='#'>ПОДРОБНЕЕ</NavLink>   
                     </div>
