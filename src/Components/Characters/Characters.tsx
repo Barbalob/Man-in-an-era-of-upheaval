@@ -15,28 +15,28 @@ const Characters:FC<{setData:any}> = ({setData}) => {
             name:'Дворянин',
             href:'',
             srcImg:srcPeapeasantImg,
-            data: dataPeapeasant,
+            data: dataPeapeasant[0],
             active: false
         },
         {
             name:'Купец',
             href:'',
             srcImg:srcNoblemanImg,
-            data: dataPeapeasant,
+            data: dataPeapeasant[1],
             active: false
         },
         {
             name:'Крестьянин',
             href:'',
             srcImg:srcTestImg,
-            data: dataPeapeasant,
+            data: dataPeapeasant[2],
             active: false
         },
         {
             name:'Рабочий',
             href:'',
             srcImg:srcTestImg,
-            data: dataPeapeasant,
+            data: dataPeapeasant[3],
             active: false
         }, 
     ])
