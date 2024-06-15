@@ -46,11 +46,24 @@
                 margin-top: 25px;
                 display: inline-block;
                 width: 605px;
+                max-height: 300px;
+                overflow-y: auto;
                 font-family: "Marmelad", sans-serif;
                 font-size: 30px;
                 font-weight: 400;
                 text-align: left;
-                color:#000000 ;
+                color:#000000;
+                &::-webkit-scrollbar {
+                    width: 3px;
+                    border-radius:10px;
+                }
+                &::-webkit-scrollbar-track {
+                        background: inherit;
+                }
+                &::-webkit-scrollbar-thumb {
+                        background-color: rgb(154, 126, 95);
+                        border-radius: 5px;
+                }
             }
         }
         .decor{
