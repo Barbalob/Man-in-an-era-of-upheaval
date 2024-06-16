@@ -1,0 +1,161 @@
+.authors-title{
+    margin-top: 19px;
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71.14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 89, 37, 1);
+}
+
+.authors-list{
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+    margin: 0 auto;
+    max-width: 900px;
+    margin-top: 19px;
+    margin-bottom: 75px;
+    &-items-wrapper{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &-items{
+        &-image{
+            width: 180px;
+        }
+        &-name{
+            font-family: Marmelad;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28.58px;
+            text-align: center;
+            white-space: nowrap;
+            
+        }
+        &-line{
+            background: rgba(255, 89, 37, 1);
+            width: 220px;
+            height: 1px;
+        }
+        &-description{
+            font-family: Marmelad;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23.82px;
+            text-align: center;
+            
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1499px) {
+
+    .authors-list{
+        gap: 20px;
+        max-width: 990px;
+        margin-top: 19px;
+        margin-bottom: 75px;
+        flex-wrap: wrap;
+        &-items-wrapper{
+            gap: 10px;
+        }
+        &-items{
+            &-image{
+                width: 150px;
+            }
+            &-name{
+                font-size: 20px;
+                line-height: 28.58px;
+                
+            }
+            &-line{
+                width: 160px;
+            }
+            &-description{
+                font-size: 16px;
+                line-height: 23.82px;
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .authors-title{
+        margin-top: 19px;
+        font-size: 40px;
+        line-height: 71.14px;
+    }
+    .authors-list{
+        max-width: 750px;
+        margin-top: 19px;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        &-items-wrapper{
+            gap: 10px;
+        }
+        &-items{
+            &-image{
+                width: 150px;
+            }
+            &-name{
+                font-size: 20px;
+                line-height: 26.58px;
+                
+            }
+            &-line{
+                width: 150px;
+            }
+            &-description{
+                font-size: 16px;
+                line-height: 20.82px;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .authors-title{
+        margin-top: 19px;
+        font-size: 35px;
+        line-height: 71.14px;
+    }
+    .authors-list{
+        gap: 20px;
+        max-width: 100vw;
+        padding: 0 10px;
+        margin-top: 19px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        &-items-wrapper{
+            gap: 5px;
+        }
+        &-items{
+            &-image{
+                width: 160px;
+            }
+            &-name{
+                max-width: 160px;
+                font-size: 16px;
+                line-height: 26.58px;
+                text-align: center;
+
+                
+            }
+            &-line{
+                width: 160px;
+            }
+            &-description{
+                max-width: 150px;
+                font-size: 14px;
+                line-height: 20.82px;
+                
+            }
+        }
+    }
+}

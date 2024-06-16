@@ -23,7 +23,7 @@ const Header = () => {
                 </li> */}
                 <li className="header-list-item">
                     <img className="header-list-item-img" src={srcIconAuthors} alt="" />
-                    <NavLink className="header-list-item-a" to='#'>Об Aвторах</NavLink>  
+                    <NavLink className="header-list-item-a" to='authors'>Об Aвторах</NavLink>  
                 </li>
             </ul>
 
